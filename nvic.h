@@ -1,0 +1,39 @@
+#pragma once
+
+#define NVIC_ISER *((uint32_t *)0xE000E100)
+#define NVIC_ICER *((uint32_t *)0xE000E180)
+
+#define NVIC_ISER_SETENA_WWDG           (0x00000001) // 0
+#define NVIC_ISER_SETENA_PVD_VDDIO2     (0x00000002) // 1
+#define NVIC_ISER_SETENA_RTC            (0x00000004) // 2
+#define NVIC_ISER_SETENA_FLASH          (0x00000008) // 3
+#define NVIC_ISER_SETENA_RCC_CRS        (0x00000010) // 4
+#define NVIC_ISER_SETENA_EXTIO_1        (0x00000020) // 5
+#define NVIC_ISER_SETENA_EXTI2_3        (0x00000040) // 6
+#define NVIC_ISER_SETENA_EXTI4_15       (0x00000080) // 7
+#define NVIC_ISER_SETENA_TSC            (0x00000100) // 8
+#define NVIC_ISER_SETENA_DMA_CH1        (0x00000200) // 9
+#define NVIC_ISER_SETENA_DMA_CH2_3      (0x00000400) // 10
+#define NVIC_ISER_SETENA_DMA2_CH1_2     (0x00000400) // same as above
+#define NVIC_ISER_SETENA_DMA_CH4_5_6_7  (0x00000800) // 11
+#define NVIC_ISER_SETENA_DMA2_CH3_4_5   (0x00000800) // same as above
+#define NVIC_ISER_SETENA_ADC_COMP       (0x00001000) // 12
+#define NVIC_ISER_SETENA_TIM1_BRK_UP_TRG_COM (0x00002000) // 13
+#define NVIC_ISER_SETENA_TIM1_CC        (0x00004000) // 14
+#define NVIC_ISER_SETENA_TIM2           (0x00008000) // 15
+#define NVIC_ISER_SETENA_TIM3           (0x00010000) // 16
+#define NVIC_ISER_SETENA_TIM6_DAC       (0x00020000) // 17
+#define NVIC_ISER_SETENA_TIM7           (0x00040000) // 18
+#define NVIC_ISER_SETENA_TIM14          (0x00080000) // 19
+#define NVIC_ISER_SETENA_TIM15          (0x00100000) // 20
+#define NVIC_ISER_SETENA_TIM16          (0x00200000) // 21
+#define NVIC_ISER_SETENA_TIM17          (0x00400000) // 22
+#define NVIC_ISER_SETENA_I2C1           (0x00800000) // 23
+#define NVIC_ISER_SETENA_I2C2           (0x01000000) // 24
+#define NVIC_ISER_SETENA_SPI1           (0x02000000) // 25
+#define NVIC_ISER_SETENA_SPI2           (0x04000000) // 26
+#define NVIC_ISER_SETENA_USART1         (0x08000000) // 27
+#define NVIC_ISER_SETENA_USART2         (0x10000000) // 28
+#define NVIC_ISER_SETENA_USART3_4_5_6_7_8 (0x20000000) // 29
+#define NVIC_ISER_SETENA_CEC_CAN        (0x40000000) // 30
+#define NVIC_ISER_SETENA_USB            (0x80000000) // 31
