@@ -25,7 +25,7 @@ The system utilizes the **NVIC (Nested Vector Interrupt Controller)** to coordin
 * **Chained Conversions**: The `ADC1_IRQHandler` captures the result of Channel 0 and immediately initiates a conversion for Channel 1.
 * **Data Integrity**: To prevent race conditions, interrupts are globally disabled using `__asm("CPSID I")` during result scaling, then re-enabled with `__asm("CPSIE I")`.
 
-## 📊 Benchmarks
+## Benchmarks
 
 | Metric | Floating-Point (NN_predict) | Quantized (NN_qpredict) | Improvement |
 | :--- | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ The system utilizes the **NVIC (Nested Vector Interrupt Controller)** to coordin
 
 *Note: With -O3 compiler optimization enabled, execution time drops further to **2.49 μs***
 
-## 📁 Repository Structure
+## Repository Structure
 
 * `nn.c / nn.h`: Fixed-point Neural Network implementation and model parameters.
 * `main.c`: Coordination of Systick, ADC, and USART callback functions.
